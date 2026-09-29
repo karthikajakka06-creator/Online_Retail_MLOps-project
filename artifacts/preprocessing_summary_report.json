@@ -1,0 +1,23 @@
+{
+  "source": "data/OnlineRetail.csv",
+  "cleaned_transactions": 392692,
+  "customer_count": 4070,
+  "forecast_days": 30,
+  "cutoff_date": "2011-11-09T12:50:00",
+  "features": [
+    "Recency",
+    "Frequency",
+    "Monetary",
+    "TotalQuantity",
+    "UniqueProducts",
+    "AvgTransactionValue"
+  ],
+  "target": "FuturePurchase",
+  "target_counts": {
+    "0": 2690,
+    "1": 1380
+  },
+  "train_rows": 3256,
+  "test_rows": 814,
+  "random_state": 42
+}

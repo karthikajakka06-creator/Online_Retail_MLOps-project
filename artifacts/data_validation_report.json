@@ -1,0 +1,11 @@
+{
+  "schema_valid": true,
+  "cleaned_transactions": 392692,
+  "customer_count": 4070,
+  "cutoff_date": "2011-11-09T12:50:00",
+  "target": "FuturePurchase",
+  "target_counts": {
+    "0": 2690,
+    "1": 1380
+  }
+}

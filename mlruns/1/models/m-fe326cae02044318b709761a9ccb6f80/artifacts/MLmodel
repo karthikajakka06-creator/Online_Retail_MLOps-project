@@ -1,0 +1,39 @@
+artifact_path: file:C:/Users/User/Desktop/Online_Retail_MLops-project/mlruns/1/models/m-fe326cae02044318b709761a9ccb6f80/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.13.15
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.0
+    skops_trusted_types:
+    - sklearn.tree._tree.Tree
+is_signature_from_type_hint: false
+mlflow_version: 3.16.1
+model_id: m-fe326cae02044318b709761a9ccb6f80
+model_size_bytes: 11469628
+model_uuid: m-fe326cae02044318b709761a9ccb6f80
+prompts: null
+run_id: 730ec009a458466892753f57a8fe850a
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "Recency", "required": true}, {"type": "double",
+    "name": "Frequency", "required": true}, {"type": "double", "name": "Monetary",
+    "required": true}, {"type": "double", "name": "TotalQuantity", "required": true},
+    {"type": "double", "name": "UniqueProducts", "required": true}, {"type": "double",
+    "name": "AvgTransactionValue", "required": true}]'
+  outputs: '[{"type": "integer", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-09-29 17:37:13.443456'

@@ -1,0 +1,21 @@
+{
+  "valid": true,
+  "train_shape": [
+    3256,
+    6
+  ],
+  "test_shape": [
+    814,
+    6
+  ],
+  "features": [
+    "Recency",
+    "Frequency",
+    "Monetary",
+    "TotalQuantity",
+    "UniqueProducts",
+    "AvgTransactionValue"
+  ],
+  "finite_values": true,
+  "matches_fitted_preprocessor": true
+}

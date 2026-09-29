@@ -1,0 +1,26 @@
+
+
+artifacts/*.db
+artifacts/*.db-shm
+artifacts/*.db-wal
+artifacts/*.joblib
+artifacts/mlflow_run.json
+artifacts/reproducibility_report.json
+
+models/preprocessor.pkl
+models/production_customer_purchase_pipeline.pkl
+
+outputs/confusion_matrix.csv
+outputs/error_analysis.csv
+outputs/evaluation_report.json
+outputs/preprocessed_*.csv
+# MLflow
+mlruns/
+
+# Virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
