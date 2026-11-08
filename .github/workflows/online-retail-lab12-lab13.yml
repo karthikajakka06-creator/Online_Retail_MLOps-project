@@ -1,0 +1,34 @@
+
+name: Online Retail Lab 12 and Lab 13
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check Lab 12 and Lab 13 files
+        run: |
+          test -f 12_monitoring.py
+          test -f 13_end_to_end.py
+
+      - name: Compile Lab 12 and Lab 13
+        run: |
+          python -m py_compile 12_monitoring.py
+          python -m py_compile 13_end_to_end.py
+
+      - name: Validation successful
+        run: echo "Online Retail Lab 12 and Lab 13 validation passed"
